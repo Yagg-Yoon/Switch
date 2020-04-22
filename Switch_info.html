@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Switch - Information</title>
+	<link rel="icon" type="image/png" href="./img/favicon.png">
+	<meta charset="utf-8">
+	<meta name="author" content="1L3Y">
+	<meta name="keywords" content="platformer, game, 3d, switch, cute, dark">
+	<meta name="description" content="Information about Switch - The Game by 1L3Y">
+	<meta http-equiv="refresh" content="120">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" type="text/css" href="./css/switch_website_style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+<div>
+	<h1>Information about Switch - The Game</h1>
+	<a href="Switch_members.html"><p>About the members</p></a>
+	<h2>Progression of the game :</h2>
+	<p><b><u>By the first defense</u></b></p>
+	<p class = "journal">The project is moving along on schedule, our expectations have been met and we are set to reach
+our goals for next defense within the given time.</p>
+	<img src="./img/1st_defense_obj_table.png" height="150px" "alt="1st defense objectives table"></img>
+	<p class = "journal">Interface and AI are still at a rudimentary level, as was scheduled in the book of specifications,
+as they require some of the elementary assets developed during the first phase of the project. In
+the case of interface, the first game scenes must be put together before we can link them together
+while monster AI requires functioning players to track.
+<br>The development of elementary assets is progressing ahead of schedule : graphics, multiplayer
+connectivity and the game’s physics are all going smoothly, which means a solid base is in place to
+start working on the more intricate parts of the project.
+<br>Music and website making are also going according to schedule.</p>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container d1_slides">
+<img src="./img/d1_interface.png" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Interface
+  </div>
+  </div>
+  
+  <div class="w3-display-container d1_slides">
+<img src="./img/d1_multiplayer.png" style="width:100%">
+<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Multiplayer
+  </div>
+  </div>
+ 
+ <div class="w3-display-container d1_slides">
+<img src="./img/101.png" style="width:100%">
+<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Squalidland - Psychopath 101
+  </div>
+  </div>
+  
+ <div class="w3-display-container d1_slides">
+<img src="./img/Donut_screen.png" style="width:100%">
+<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Candyland - Donut
+  </div>
+  </div>
+ 
+ <div class="w3-display-container d1_slides">
+<img src="./img/Arbre.png" style="width:100%">
+<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Squalidland - Tree
+  </div>
+  </div>
+  
+ <div class="w3-display-container d1_slides">
+<img src="./img/girl_cycles.png" style="width:100%">
+<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Candyland - Alice
+  </div>
+  </div>
+  
+ <div class="w3-display-container d1_slides">
+<img src="./img/FantomFish.PNG" style="width:100%">
+<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Squalidland - FantomFish
+  </div>
+  </div>
+  
+ <div class="w3-display-container d1_slides">
+<img src="./img/website_screenshot.png" style="width:100%">
+<div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    The website as of march 2020
+  </div>
+  </div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>
+	<p class = "journal">As for the next step of the project, the focus is still on the creation of the assets to be used in the
+construction of the game at a later date. However, now that the base of the game is in place, the
+development of assets depending on other parts of the game, such as AI, can start being introduced.
+<br>Currently, we are mostly working on separate parts of the project with little overlap, which is
+why, for the next defence, we plan to start gathering all parts of the project into one. Once we have
+a coherent, playable game, we can focus on expanding on it and improving the existing content.
+</p>
+	<p><b><u>Problems encountered during this project :</u></b></p>
+	<br><br>
+	<h2>Useful links :</h2>
+	<p>Click on the links below for more information and links to the software, media and collections that the 1L3Y team has used to make Switch.</p>
+	<a href="Switch_softwares.html" target="_blank"><p>- Software</p></a>
+	<a href="Switch_media.html" target="_blank"><p>- Media</p></a>
+	<a href="Switch_collections.html" target="_blank"><p>- Libraries/Collections</p></a>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("d1_slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+<style>
+.d1_slides {display:none;}
+body {
+	background: url("./img/Website_bg_white.png") no-repeat;
+	background-size:cover;
+}
+div {
+	font-family:Aladin;
+	text-align: left;
+}
+h1,h2,h3,h4,h5 {
+	font-family:Aladin;
+}
+.journal {
+	font-family:'Reenie Beanie';
+	font-weight:bold;
+}
+/*bad script; nanum pen script;covered by your grace;dancing script; devonshire;grand hotel;montez;reenie beanie;satisfy;vibur;*/
+</style>
+</html>

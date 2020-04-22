@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Switch Project - Home</title>
+	<link rel="icon" type="image/png" href="./img/favicon.png">
+	<meta charset="utf-8">
+	<meta name="author" content="1L3Y">
+	<meta name="keywords" content="platformer, game, 3d, switch, cute, dark">
+	<meta name="description" content="Home page of the website about the project Switch.">
+	<meta http-equiv="refresh" content="120">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" type="text/css" href="./css/switch_website_style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Black And White Picture' rel='stylesheet'>
+
+</head>
+
+<body>
+<div>
+	<img src="./img/Switch_logo.png" alt="Switch" class="center" width="20%"></img>
+	<br>
+	<span class = "tooltipcute">
+	<img class="yy_char" class="group" src="./img/yy_char.png" width="66" height="120" alt="cute world character"></img>
+	<span class = "tooltipcutetext">I'm from Candyland !</span>
+	</span>
+	<span style = "font-family:'Black And White Picture'">
+	Welcome :)
+	</span>
+	<span class = "tooltipnotcute">
+	<img class="lam_char" class="group" src="./img/lam_char.png" width="93" height="120" alt="scary world character"></img>
+	<span class = "tooltipnotcutetext">I'm from Squalidland !</span>
+	</span>
+	<span class = "mark-switch">
+	<h4 style = "font-family:Aclonica">Welcome to the official website of Switch - The Game !</h4>
+	<p>
+	<span style = "font-family:Aladin">
+	Switch is an attractive 3D platformer game. You got lost in a cute world and you need to find the exit. 
+	</span>
+	<span style = "font-family:'Love Ya Like A Sister'">
+	<br> <b> But be careful what you touch ! </b><br>
+	You could get sent to another world where you might not make it alive...
+	</span></p></span>
+</div>
+
+<div>
+	<br>
+	<a href="Switch_download.html"><input type="button" class = "switch_download_button" autofocus value="Get Switch for FREE"></a>
+	<br><br><br>
+	<a href="Switch_info.html"><input type="button" class = "button" value="Learn more about Switch"></a>
+</div>
+</body>
+<style>
+.tooltipcute {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipnotcute {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipcute .tooltipcutetext {
+  visibility: hidden;
+  width: 120px;
+  background-color: pink;
+  color: #DB7093;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipnotcute .tooltipnotcutetext {
+	font-size:90%;
+  visibility: hidden;
+  width: 120px;
+  background-color: #483D8B;
+  color: #9370DB;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipcute .tooltipcutetext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: pink transparent transparent transparent;
+}
+
+.tooltipnotcute .tooltipnotcutetext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #483D8B transparent transparent transparent;
+}
+
+.tooltipcute:hover .tooltipcutetext {
+  visibility: visible;
+}
+
+.tooltipnotcute:hover .tooltipnotcutetext {
+  visibility: visible;
+}
+
+.switch_download_button {
+	padding: 3% 3%;
+	background-color:#DDA0DD;
+	font-family:Aclonica;
+	font-size:100%;
+	color:#BA55D3;
+	cursor:pointer;
+	border-radius:8px;
+	border: 2px solid #BA55D3;
+}
+
+.switch_download_button:hover {
+	background-color:#BA55D3;
+	color:white;
+	border: 2px solid #9932CC;
+}
+
+.switch_download_button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+	padding: 1% 1%;
+	cursor:pointer;
+	background-color:#87CEEB;
+	color:#4169E1;
+	font-family:Aclonica;
+	font-size:100%;
+	border-radius:8px;
+	border: 2px solid #4682B4;
+	/*add transition pls*/
+}
+.button:hover {
+	background-color:#4169E1;
+	color:white;
+	border: 2px solid #191970;
+}
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.mark-switch {
+	text-shadow: 5px 5px 5px orange;
+}
+</style>
+</html>
