@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -162,7 +163,29 @@ More level making, as well as modeling and animating more monsters and player de
   <button class="w3-button w3-display-left w3-black" onclick="plusDivstwo(-1)">&#10094;</button>
 <button class="w3-button w3-display-right w3-black" onclick="plusDivstwo(1)">&#10095;</button>
 </div>
+<p><b>By the last defense :</b></p>
+<p class="journal">The project went quite well, we got the results we were expecting for most aspects : apart from a few bugs that emerged when joining
+the different parts of the project, the game is working the way we wanted it to.</p>
+<div class="w3-content w3-display-container">
+ <div class="w3-display-container d3_slides">
+<img src="./img/switch_website_may_homepage.png" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    The website's homepage as of may 2020
+  </div>
+  </div>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivsthree(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivsthree(1)">&#10095;</button>
+</div>
 	<p><b><u>Problems encountered during this project :</u></b></p>
+	<p class="journal">Hey ! I am in charge of 3D modeling part of the project.  For the first defense of our project, I leaned how to use Blender, for the second, I had to learn how to use Unity. I made with a lot of effort and time my first monster. And from the beginning, I encountered lots of problems in Blender such as :
+<br>-    Needless important character size (I could have just reduced its size by doing unsubdivide, and optimize the Blender model);
+<br>-    Understanding the different tools in Blender, which are quite complicated in my opinion;
+<br>-    Importing Blender models on Unity (I should have imported the character sooner to fix them without having to stress or rush);
+<br>-    Pushing my work was not possible, because I had a warning on the size of my files on Git;
+<br>-    Merging my work with my team, because they had to reimport all the models again on their computer;
+<br>-    Placing something on a website with HTML, CSS code.
+<br>These problems are just big ones containing lots more little technical problems.
+<br>But understanding how to deal with theses errors made me improved on Blender and Unity, even if I still have some troubles using it, or understanding the problems.</p>
 	<br><br>
 	<h2>Useful links :</h2>
 	<p>Click on the links below for more information and links to the software, media and collections that the 1L3Y team has used to make Switch.</p>
@@ -205,6 +228,24 @@ function showDivstwo(n) {
      x[i].style.display = "none";  
   }
   x[slideIndextwo-1].style.display = "block";  
+ }
+ 
+ var slideIndexthree = 1;
+showDivsthree(slideIndexthree);
+
+function plusDivsthree(n) {
+  showDivsthree(slideIndexthree += n);
+}
+
+function showDivsthree(n) {
+  var i;
+  var x = document.getElementsByClassName("d3_slides");
+  if (n > x.length) {slideIndexthree = 1}
+  if (n < 1) {slideIndexthree = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndexthree-1].style.display = "block";  
  }
 </script>
 </body>
