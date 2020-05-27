@@ -13,14 +13,16 @@
 	<link rel="stylesheet" media="screen" type="text/css" href="./css/switch_website_style.css" />
 	<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
 <body>
+<a href="index.html"><img src="./img/Switch_logo.png" style="width:10%" img></a>
 <div>
 	<h1>Information about Switch - The Game</h1>
-	<a href="Switch_members.html"><p>About the members</p></a>
+	<a class = "w3-text-orange" href="Switch_members.html"><p>About the members</p></a>
 	<h2>Progression of the game :</h2>
 	<p><b><u>By the first defense</u></b></p>
 	<p class = "journal">The project is moving along on schedule, our expectations have been met and we are set to reach
@@ -101,13 +103,42 @@ development of assets depending on other parts of the game, such as AI, can star
 why, for the next defense, we plan to start gathering all parts of the project into one. Once we have
 a coherent, playable game, we can focus on expanding on it and improving the existing content.
 </p>
+<p><b><u>By the second defense</u></b></p>
+<p class="journal">Our team has had to work from home, so we did not merge the different elements of the game. However, staying at home did not slow us down whatsoever
+and we were once again able to reach our objectives.</p>
+<img src="./img/2nd_defense_obj_table.png" height="150px" "alt="2nd defense objectives table"></img>
+<p class="journal">Most of what the multiplayer has to accomplish for this project has been done. Finer details
+have been further worked on in order to improve the player’s experience. Packet loss handling
+(synchronization of data), server authority and custom properties over the network have all been
+added. As predicted the multiplayer is only missing very few additions such as managing ownerships, animator view and a scoreboard.
+<br>A new interface has been added to the game. Once a player has loaded a scene and is in a level,
+they are able to press escape to either leave the session they are in, or resume the game they are
+playing. Leaving the session will get you back to the lobby selection screen and the player will be
+able to join another room.
+<br>As for music, Switch now has in total four original soundtracks split evenly between worlds, 2 for the Candyland,
+1 for the Squalidland and the last one for the menu.<br>
+Many new 3D models have been created : more monsters and decorations for both worlds, as well as models to use as a basis for the player design.
+A few levels have already been made.
+More level making, as well as modeling and animating more monsters and player design, is what awaits the Blender team.
+<br>Many features have been added to the game, such as player state, possession, interactive objects and level generation.
+<br> Finally, all of the website's subpages were created and will be completed after the second defense and right before the last one.</p>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container d2_slides">
+<img src="./img/new_interface_feature.png" style="width:100%" alt="pressing escape">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    A new interface feature
+  </div>
+  </div>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>
 	<p><b><u>Problems encountered during this project :</u></b></p>
 	<br><br>
 	<h2>Useful links :</h2>
 	<p>Click on the links below for more information and links to the software, media and collections that the 1L3Y team has used to make Switch.</p>
-	<a href="Switch_softwares.html" target="_blank"><p>- Software</p></a>
-	<a href="Switch_media.html" target="_blank"><p>- Media</p></a>
-	<a href="Switch_collections.html" target="_blank"><p>- Libraries/Collections</p></a>
+	<a class = "w3-text-orange" href="Switch_softwares.html" target="_blank"><p>- Software</p></a>
+	<a class = "w3-text-orange" href="Switch_media.html" target="_blank"><p>- Media</p></a>
+	<a class = "w3-text-orange" href="Switch_collections.html" target="_blank"><p>- Libraries/Collections</p></a>
 </div>
 <script>
 var slideIndex = 1;
@@ -131,10 +162,7 @@ function showDivs(n) {
 </body>
 <style>
 .d1_slides {display:none;}
-body {
-	background: url("./img/Website_bg_white.png") no-repeat;
-	background-size:cover;
-}
+.d2_slides {display:none;}
 div {
 	font-family:Aladin;
 	text-align: left;
@@ -143,7 +171,7 @@ h1,h2,h3,h4,h5 {
 	font-family:Aladin;
 }
 .journal {
-	font-family:'Reenie Beanie';
+	font-family:'Bad Script';
 	font-weight:bold;
 }
 /*bad script; nanum pen script;covered by your grace;dancing script; devonshire;grand hotel;montez;reenie beanie;satisfy;vibur;*/
