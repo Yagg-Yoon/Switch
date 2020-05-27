@@ -124,13 +124,25 @@ More level making, as well as modeling and animating more monsters and player de
 <br> Finally, all of the website's subpages were created and will be completed after the second defense and right before the last one.</p>
 <div class="w3-content w3-display-container">
 <div class="w3-display-container d2_slides">
-<img src="./img/new_interface_feature.png" style="width:100%" alt="pressing escape">
+<img src="./img/new_interface_feature.png" style="width:100%">
 <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
     A new interface feature
   </div>
   </div>
-  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+ <div class="w3-display-container d2_slides">
+<img src="./img/monsters_game.png" style="width:100%" alt="pressing escape">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Interactive objects
+  </div>
+  </div>
+ <div class="w3-display-container d2_slides">
+<img src="./img/house.png" style="width:100%" alt="pressing escape">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Squalidland's haunted house
+  </div>
+  </div>
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivstwo(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivstwo(1)">&#10095;</button>
 </div>
 	<p><b><u>Problems encountered during this project :</u></b></p>
 	<br><br>
@@ -158,6 +170,24 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+var slideIndextwo = 1;
+showDivstwo(slideIndextwo);
+
+function plusDivstwo(n) {
+  showDivstwo(slideIndextwo += n);
+}
+
+function showDivstwo(n) {
+  var i;
+  var x = document.getElementsByClassName("d2_slides");
+  if (n > x.length) {slideIndextwo = 1}
+  if (n < 1) {slideIndextwo = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndextwo-1].style.display = "block";  
+ }
 </script>
 </body>
 <style>
