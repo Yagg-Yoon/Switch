@@ -168,6 +168,35 @@ More level making, as well as modeling and animating more monsters and player de
 the different parts of the project, the game is working the way we wanted it to.</p>
 <div class="w3-content w3-display-container">
  <div class="w3-display-container d3_slides">
+<img src="./img/101_Ghost.PNG" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Squalidland's Psychopath 101 in its natural habitat
+  </div>
+  </div>
+  <div class="w3-display-container d3_slides">
+<img src="./img/11.PNG" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Candyland
+  </div>
+  </div> 
+ <div class="w3-display-container d3_slides">
+<img src="./img/66.PNG" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Squalidland
+  </div>
+  </div>
+ <div class="w3-display-container d3_slides">
+<img src="./img/33.PNG" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Cowboy (player design)
+  </div>
+  </div> <div class="w3-display-container d3_slides">
+<img src="./img/player_2.png" style="width:100%">
+<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Clementine (player design)
+  </div>
+  </div>
+ <div class="w3-display-container d3_slides">
 <img src="./img/switch_website_may_homepage.png" style="width:100%">
 <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
     The website's homepage as of may 2020
@@ -185,7 +214,14 @@ the different parts of the project, the game is working the way we wanted it to.
 <br>-    Merging my work with my team, because they had to reimport all the models again on their computer;
 <br>-    Placing something on a website with HTML, CSS code.
 <br>These problems are just big ones containing lots more little technical problems.
-<br>But understanding how to deal with theses errors made me improved on Blender and Unity, even if I still have some troubles using it, or understanding the problems.</p>
+<br>But understanding how to deal with theses errors made me improved on Blender and Unity, even if I still have some troubles using it, or understanding the problems.
+<br>One of the main issues encountered in the making of the multiplayer was to avoid at all costs any duplicate client.
+There are lots of ways to create duplicate clients without ever noticing and once that is done, it is hard to pin point exactly why such duplicate can be found.
+For example, while I was making the room system for the game, when a player left a room and joined it back, he would duplicate himself. That was due to the fact that
+the room did not update whenever a player left the room and did not clear inactive players. This problem has been fixed, however there still remains a bug which hasn't been
+fixed yet. There always seem to be a ghost player in the room when there are atleast two players. Being hard to pinpoint exactly where the problem could be, it is really hard
+to fix it. As of right now, I can only say for sure that the RPC which creates the players gets called by an object one too many time resulting in a player getting created that
+cannot be controlled by anyone in the room.</p>
 	<br><br>
 	<h2>Useful links :</h2>
 	<p>Click on the links below for more information and links to the software and collections that the 1L3Y team has used to make Switch.</p>
